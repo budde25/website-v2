@@ -25,7 +25,7 @@
 }
 
 .site-nav {
-  float: right;
+  float: left;
   line-height: $base-line-height * $base-font-size * 2.25;
 
   .nav-trigger {
@@ -39,11 +39,21 @@
   .page-link {
     color: $text-color;
     line-height: $base-line-height;
+    text-align: center;
+    font-size: 1.2rem;
+    padding: .8em 1em 0.8em;
+    margin-left: 0.2rem;
+    margin-right: 0.2rem;
+    //border-bottom: 1px solid $grey-color-light;
 
     // Gaps between nav items, but not on the last one
     &:not(:last-child) {
-      margin-right: 20px;
+      //margin-right: 0.8rem;
     }
+  }
+
+  .current {
+    background: $grey-color-light;
   }
 
   @include media-query($on-palm) {
@@ -93,9 +103,9 @@
       padding: 5px 10px;
 
       &:not(:last-child) {
-        margin-right: 0;
+       // margin-right: 0;
       }
-      margin-left: 20px;
+      // margin-left: 20px;
     }
   }
 }
