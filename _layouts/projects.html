@@ -1,0 +1,53 @@
+---
+layout: default
+---
+
+<div class="projects">
+
+  {%- if page.title -%}
+    <h1 class="page-heading">{{ page.title }}</h1>
+  {%- endif -%}
+
+    {%- if site.projects.size > 0 -%}
+    <ul class="post-list">
+      {%- for project in site.projects -%}
+      <li>
+        <span class="post-meta">{{ post.date | date: date_format }}</span>
+        <div class="project-title">
+            <h3>
+                <a class="post-link" href="{{ project.github_url }}">
+                    {{ project.name | escape }}
+                </a>
+            </h3>
+        </div>
+        <div class="project-content">
+            {%- if project.description -%}
+            <h4>
+                {{ project.description }}    
+            </h4>
+            {%- endif -%}
+        </div>
+        <div class="project-footer">
+            <div class="meta">
+                {%- if project.date -%}
+                    <i class="fa fa-sun-o"></i>
+                    <span class="date">
+                        {{ project.date }} 
+                    </span>
+                {%- endif -%}
+                {%- if project.tags.size > 0 -%}
+                    <i class="fa fa-tag"></i>
+                    {%- for tag in project.tags -%}
+                        <span class="tag">
+                            {{ tag }} 
+                        </span>
+                    {%- endfor -%}
+                {%- endif -%}
+            </div>
+        </div>
+      </li>
+      {%- endfor -%}
+    </ul>
+
+  {%- endif -%}
+</div>
