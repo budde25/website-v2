@@ -38,8 +38,120 @@ header_pages:
     - projects.md
     - resume.md
 
-minima:
-  skin: dark
+
+projects:
+  - name: NxCloud
+    description: >-
+        A CLI to provide a simple download and upload interface with a NextCloud server.
+        Allows for easy file management on servers or just from the command line in general.
+    github_url: https://github.com/budde25/nxcloud
+    crates_url: https://crates.io/crates/nxcloud
+    date: Present
+    tags:
+      - Rust
+      - CLI
+      - NextCloud
+  - name: KeySync
+    description: >-
+        Inspired by the automatic key downloading featured in Ubuntu 20.04, keysync
+        was an attempt to make it a more functional CLI and Service. It allows automatic
+        and manual retrieval from GitHub, GitLab, Launchpad. <br/> 
+        Probably overengineered for most use cases could be automated with simple cron job.
+    github_url: https://github.com/budde25/keysync
+    crates_url: https://crates.io/crates/keysync
+    tags:
+      - Rust
+      - CLI
+      - Linux
+      - SQL
+    date: January 2021
+  - name: Party DJ
+    description: >-
+        A Spotify group queuing cross platform mobile to allows multiple
+        people to control a playlist. <br/>
+        Spotify has since integrated similar features into the official app that works
+        much better.
+    github_url: https://github.com/budde25/PartyDJ
+    playstore_url: https://play.google.com/store/apps/details?id=dev.budde.spotify_queue
+    applestore_url: https://apps.apple.com/us/app/party-music-queue/id1497405326?ls=1
+    date: April 2020
+    tags:
+      - Flutter
+      - Dart
+      - Java
+      - Objective-C
+      - Google Firestore
+  - name: Website
+    description: >-
+        The website you are currently looking at. It is made using Jekyll.
+        and deployed on GitHub pages.
+    github_url: https://github.com/budde25/website-v2
+    date: Present
+    tags:
+        Jekyll
+  - name: "[former] Website"
+    description: >-
+        My old website that I created to display my portfolio. I also made it to
+        learn Angular, Typescript, and web programming in general
+    github_url: https://github.com/budde25/website
+    date: November 2018
+    tags:
+      - Typescript
+      - Angular
+  - name: Portal U
+    description: >-
+        Just a simple take on creating an extendable student dashboard. Just made it 
+        to learn React.
+    github_url: https://github.com/budde25/portalU
+    date: July 2020
+    tags:
+        - Typescript
+        - React
+  - name: Conway's Game of Life
+    description: >-
+        Super simple implementation of game of life written in C as displayed as
+        TUI.
+    github_url: https://github.com/budde25/conways-game-of-life
+    date: February 2020
+    tags:
+      - C
+      - TUI
+  - name: Neural Numbers
+    description: >-
+        A Java program that uses the Neural Network below and the 
+        <a href="http://yann.lecun.com/exdb/mnist/"> MNIST hand drawn digits dataset </a>
+        to train it. It can correctly identify numbers with ~90% accuacy from the test set and ~30% of the
+        time if hand drawn. Digits can be drawn with help from Java Swing.
+    tags:
+      - Java
+      - Swing
+  - name: Neural Network Library
+    description: >-
+        My attempt to create super basic neural network library. Written in Java
+        as it was the only language I knew at the time. Based on Daniel Shiffman 
+        <a href="https://natureofcode.com/book/chapter-10-neural-networks/"> The Nature of Code </a> 
+    github_url: https://github.com/budde25/NeuralNetworkLibrary/
+    tags:
+      - Java
+      - Neural Network
+      - Library
+  - name: Smart Dots
+    description: >-
+        Basic genetic algorithm of dots trying to reach a goal. Uses P5js library
+        to handle drawing to the screen.
+    github_url: https://github.com/budde25/smart-dots/
+    date: March 2019
+    tags:
+      - Typescript
+      - P5js
+  - name: JS Snake
+    description: >-
+        My first Javascript program, just made a simple snake clone that wraps
+        on the edges.
+    github_url: https://github.com/budde25/js-snake
+    date: January 2019
+    tags:
+      - Javascript
 
 # Theme settings
 # Exclude from processing.

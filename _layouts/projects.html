@@ -36,11 +36,9 @@ layout: default
                     </span>
                 {%- endif -%}
                 {%- if project.tags.size > 0 -%}
-                    <i class="fa fa-tag"></i>
+                    <i class="fa fa-tag">&nbsp</i>
                     {%- for tag in project.tags -%}
-                        <span class="tag">
-                            {{ tag }} 
-                        </span>
+                        <span class="tag">{{ tag }}&nbsp&nbsp</span>
                     {%- endfor -%}
                 {%- endif -%}
             </div>
