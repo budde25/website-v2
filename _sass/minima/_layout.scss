@@ -134,6 +134,11 @@
 	visibility: hidden;
 }
 
+a, a:visited {
+    text-decoration: underline;
+    color: black;
+}
+
 /**
  * Site footer
  */
