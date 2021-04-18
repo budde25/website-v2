@@ -34,7 +34,7 @@ plugins:
 
 # Navagation bar
 header_pages:
-    - index.md
+    - index.html
     - projects.md
     - resume.md
 

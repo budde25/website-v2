@@ -1,20 +1,20 @@
 <footer class="site-footer h-card">
   <data class="u-url" href="{{ "/" | relative_url }}"></data>
 
-  <div class="wrapper">
+  <div itemscope itemtype="https://schema.org/Person" class="wrapper">
 
     <div class="footer-col-wrapper">
       <div class="footer-col footer-col-1">
         <ul class="contact-list">
           <li class="p-name">
             {%- if site.email -%}
-            <li><a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+            <li><a itemprop="email" class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a></li>
             {%- endif -%}
         </ul>
       </div>
 
       <div class="footer-col footer-col-2">
-          <p>Ethan Budd</p>
+          <p itemprop="name">Ethan Budd</p>
       </div>
 
       <div class="footer-col footer-col-3">
@@ -22,6 +22,21 @@
       </div>
     </div>
 
-  </div>
+
+    <div class="hidden">
+	<span itemprop="gender">Male</span>
+	<span itemprop="givenName">Ethan</span>
+	<span itemprop="familyName">Budd</span>
+        <span itemprop="additionalName">Ronald</span>
+	<span itemprop="jobTitle">Software Developer</span>
+        <div itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
+            <div itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+		    <span itemprop="addressRegion">Wisconsin</span>,
+		    <span itemprop="addressCountry">US</span>,
+	    </div>
+        </div>
+    </div>
+
+</div>
 
 </footer>

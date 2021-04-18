@@ -129,6 +129,10 @@
     transform: scale(1.8)
 }
 
+.hidden {
+	display: none !important;
+	visibility: hidden;
+}
 
 /**
  * Site footer
