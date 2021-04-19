@@ -15,14 +15,14 @@ layout: default
         <span class="post-meta">{{ post.date | date: date_format }}</span>
         <div class="project-title">
             <h3 itemprop="name">
-                <a itemprop url ="post-link" href="{{ project.github_url }}">
+                <a itemprop="url" class="post-link" href="{{ project.github_url }}">
                     {{ project.name | escape }}
                 </a>
             </h3>
         </div>
         <div class="project-content">
             {%- if project.description -%}
-            <h4 itemprop="description">
+            <h4 itemprop="description" itemprop="abstract">
                 {{ project.description }}    
             </h4>
             {%- endif -%}
@@ -37,7 +37,7 @@ layout: default
                 {%- endif -%}
                 {%- if project.tags.size > 0 -%}
                     <i class="fa fa-tag">&nbsp</i>
-                    <span itemtype="keywords">
+                    <span itemprop="keywords">
                     {%- for tag in project.tags -%}
                         <span class="tag">{{ tag }}&nbsp&nbsp</span>
                     {%- endfor -%}
