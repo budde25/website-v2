@@ -22,8 +22,8 @@ title: Ethan Budd
 email: ethan@ebudd.io
 description: >- # this means to ignore newlines until "baseurl:"
     Ethan Budd's website and portfolio.
-baseurl: "/website-v2" # the subpath of your site, e.g. /blog
-url: "https://budde25.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://ebudd.io" # the base hostname & protocol for your site, e.g. http://example.com
 github_username: budde25
 linkedin_username: ethan-budd
 
