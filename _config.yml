@@ -31,6 +31,7 @@ linkedin_username: ethan-budd
 theme: minima
 plugins:
   - jekyll-feed
+include: [CNAME]
 
 # Navagation bar
 header_pages:
