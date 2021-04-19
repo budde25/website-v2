@@ -11,18 +11,18 @@ layout: default
     {%- if site.projects.size > 0 -%}
     <ul class="post-list">
       {%- for project in site.projects -%}
-      <li>
+      <li itemscope itemtype="https://schema.org/CreativeWork" >
         <span class="post-meta">{{ post.date | date: date_format }}</span>
-        <div itemscope itemtype="https://schema.org/CreativeWork" class="project-title">
-            <h3>
-                <a itemprop="name"  class="post-link" href="{{ project.github_url }}">
+        <div class="project-title">
+            <h3 itemprop="name">
+                <a itemprop url ="post-link" href="{{ project.github_url }}">
                     {{ project.name | escape }}
                 </a>
             </h3>
         </div>
         <div class="project-content">
             {%- if project.description -%}
-            <h4 itemprop="description" itemprop="abstract">
+            <h4 itemprop="description">
                 {{ project.description }}    
             </h4>
             {%- endif -%}
