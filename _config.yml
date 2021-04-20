@@ -60,12 +60,23 @@ projects:
         Probably overengineered for most use cases could be automated with simple cron job.
     github_url: https://github.com/budde25/keysync
     crates_url: https://crates.io/crates/keysync
+    date: January 2021
     tags:
       - Rust
       - CLI
       - Linux
       - SQL
-    date: January 2021
+  - name: Surface Control Tray
+    description: >-
+        A Linux tray program to control various aspects of the Mircrosoft Surface Book 2.
+        Built on top of <a href="https://github.com/linux-surface/surface-control">Surface Control</a>, this is basically a GUI wrapper.
+    github_url: https://github.com/budde25/surface-control-tray
+    date: December 2020
+    tags:
+      - Rust
+      - Tray
+      - Systemd
+      - Linux
   - name: Party DJ
     description: >-
         A Spotify group queuing cross platform mobile to allows multiple
