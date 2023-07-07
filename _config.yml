@@ -52,7 +52,7 @@ projects:
     tags:
       - Rust
       - CLI
-      - Gui
+      - GUI
       - Exploit
   - name: NxCloud
     description: >-
