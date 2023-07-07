@@ -41,20 +41,33 @@ header_pages:
 
 
 projects:
+
+  - name: Switcheroo
+    description: >-
+        A cross platform CLI and GUI for the RCM BootRom exploit (Fusée Gelée exploit for Nintendo Switch).
+        <a href="https://budde25.github.io/switcheroo">Project Website</a>.
+    github_url: https://github.com/budde25/switcheroo
+    crates_url: https://crates.io/crates/switcheroo-nx
+    date: Present
+    tags:
+      - Rust
+      - CLI
+      - Gui
+      - Exploit
   - name: NxCloud
     description: >-
         A CLI to provide a simple download and upload interface with a NextCloud server.
         Allows for easy file management on servers or just from the command line in general.
     github_url: https://github.com/budde25/nxcloud
     crates_url: https://crates.io/crates/nxcloud
-    date: Present
+    date: January 2021
     tags:
       - Rust
       - CLI
       - NextCloud
   - name: KeySync
     description: >-
-        Inspired by the automatic key downloading featured in Ubuntu 20.04, keysync
+        Inspired by the automatic key downloading featured in Ubuntu 20.04 installer, keysync
         was an attempt to make it a more functional CLI and Service. It allows automatic
         and manual retrieval from GitHub, GitLab, Launchpad. <br/> 
         Probably overengineered for most use cases could be automated with simple cron job.
@@ -81,8 +94,7 @@ projects:
     description: >-
         A Spotify group queuing cross platform mobile to allows multiple
         people to control a playlist. <br/>
-        Spotify has since integrated similar features into the official app that works
-        much better.
+        Spotify has since integrated similar features into the official app.
     github_url: https://github.com/budde25/PartyDJ
     playstore_url: https://play.google.com/store/apps/details?id=dev.budde.spotify_queue
     applestore_url: https://apps.apple.com/us/app/party-music-queue/id1497405326?ls=1
